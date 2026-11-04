@@ -1,0 +1,316 @@
+{
+  "title": "Decision Drift Sentinel",
+  "subtitle": "From changed policy text to an auditable review queue",
+  "figures": [
+    {
+      "kind": "flow",
+      "id": "fig-01",
+      "basis": "Technical schematic",
+      "title": "Which decisions should be reviewed again?",
+      "subtitle": "Version the text   /   Tie it to a decision   /   Detect material edits   /   Keep the reason",
+      "source": "Source: README.md · conceptual relations, no measured values",
+      "nodes": [
+        [
+          0.115,
+          0.52,
+          "Original policy"
+        ],
+        [
+          0.38,
+          0.52,
+          "Quoted evidence"
+        ],
+        [
+          0.62,
+          0.52,
+          "Updated policy"
+        ],
+        [
+          0.885,
+          0.52,
+          "Review queue"
+        ]
+      ],
+      "edges": [
+        [
+          0,
+          1,
+          ""
+        ],
+        [
+          1,
+          2,
+          ""
+        ],
+        [
+          2,
+          3,
+          ""
+        ]
+      ],
+      "alt": "Which decisions should be reviewed again?. Original policy: Version the text; Quoted evidence: Tie it to a decision; Updated policy: Detect material edits; Review queue: Keep the reason"
+    },
+    {
+      "kind": "flow",
+      "id": "fig-02",
+      "basis": "Technical schematic",
+      "title": "Classify edits with deterministic rules",
+      "subtitle": "Preserve if identical   /   Normalised edit distance   /   Numbers and obligations   /   Attach both passages",
+      "source": "Source: README.md · conceptual relations, no measured values",
+      "nodes": [
+        [
+          0.115,
+          0.52,
+          "Exact text match"
+        ],
+        [
+          0.38,
+          0.52,
+          "Find successor"
+        ],
+        [
+          0.62,
+          0.52,
+          "Compare facts"
+        ],
+        [
+          0.885,
+          0.52,
+          "Emit verdict"
+        ]
+      ],
+      "edges": [
+        [
+          0,
+          1,
+          ""
+        ],
+        [
+          1,
+          2,
+          ""
+        ],
+        [
+          2,
+          3,
+          ""
+        ]
+      ],
+      "alt": "Classify edits with deterministic rules. Exact text match: Preserve if identical; Find successor: Normalised edit distance; Compare facts: Numbers and obligations; Emit verdict: Attach both passages"
+    },
+    {
+      "kind": "bars",
+      "basis": "Recorded local evidence",
+      "title": "F1 on 48 regulation-change cases",
+      "subtitle": "Section bootstrap intervals; Modal v2 is exploratory on the same cases",
+      "source": "Source: results/benchmark.json; local benchmark",
+      "labels": [
+        "All amended",
+        "Changed text",
+        "Sentinel v1",
+        "Modal v2 (exploratory)"
+      ],
+      "values": [
+        0.567,
+        0.594,
+        0.727,
+        0.756
+      ],
+      "lim": [
+        0,
+        1.08
+      ],
+      "xlabel": "F1 (dimensionless)",
+      "alt": "F1 on 48 regulation-change cases: All amended: 0.567; Changed text: 0.594; Sentinel v1: 0.727; Modal v2 (exploratory): 0.756",
+      "ticks": [
+        0,
+        0.2,
+        0.4,
+        0.6,
+        0.8,
+        1
+      ],
+      "intervals": [
+        [
+          0.4533,
+          0.7018
+        ],
+        [
+          0.4762,
+          0.7164
+        ],
+        [
+          0.5778,
+          0.878
+        ],
+        [
+          0.6154,
+          0.902
+        ]
+      ],
+      "id": "fig-03"
+    },
+    {
+      "kind": "flow",
+      "id": "fig-04",
+      "basis": "Technical schematic",
+      "title": "Run the test and benchmark independently",
+      "subtitle": "No packages required   /   Python parity fixture   /   Run locally   /   Cluster bootstrap",
+      "source": "Source: README.md · conceptual relations, no measured values",
+      "nodes": [
+        [
+          0.115,
+          0.52,
+          "Node.js 22+"
+        ],
+        [
+          0.38,
+          0.52,
+          "Test contracts"
+        ],
+        [
+          0.62,
+          0.52,
+          "Replay cases"
+        ],
+        [
+          0.885,
+          0.52,
+          "Read intervals"
+        ]
+      ],
+      "edges": [
+        [
+          0,
+          1,
+          ""
+        ],
+        [
+          1,
+          2,
+          ""
+        ],
+        [
+          2,
+          3,
+          ""
+        ]
+      ],
+      "alt": "Run the test and benchmark independently. Node.js 22+: No packages required; Test contracts: Python parity fixture; Replay cases: Run locally; Read intervals: Cluster bootstrap"
+    },
+    {
+      "kind": "flow",
+      "id": "fig-05",
+      "basis": "Technical schematic",
+      "title": "Separate local evidence and deployment",
+      "subtitle": "Single corpus   /   Limited independent labels   /   Not implemented here",
+      "source": "Source: README.md · conceptual relations, no measured values",
+      "nodes": [
+        [
+          0.16,
+          0.52,
+          "One regulation"
+        ],
+        [
+          0.5,
+          0.52,
+          "One annotator"
+        ],
+        [
+          0.84,
+          0.52,
+          "Forge integration"
+        ]
+      ],
+      "edges": [
+        [
+          0,
+          1,
+          ""
+        ],
+        [
+          1,
+          2,
+          ""
+        ]
+      ],
+      "alt": "Separate local evidence and deployment. One regulation: Single corpus; One annotator: Limited independent labels; Forge integration: Not implemented here"
+    },
+    {
+      "kind": "flow",
+      "id": "fig-06",
+      "basis": "Technical schematic",
+      "title": "Preserve the attribution chain",
+      "subtitle": "MIT notice applies   /   U.S. government source   /   Fictional; CC0",
+      "source": "Source: README.md · conceptual relations, no measured values",
+      "nodes": [
+        [
+          0.16,
+          0.52,
+          "Original code"
+        ],
+        [
+          0.5,
+          0.52,
+          "Regulation text"
+        ],
+        [
+          0.84,
+          0.52,
+          "Register fixture"
+        ]
+      ],
+      "edges": [
+        [
+          0,
+          1,
+          ""
+        ],
+        [
+          1,
+          2,
+          ""
+        ]
+      ],
+      "alt": "Preserve the attribution chain. Original code: MIT notice applies; Regulation text: U.S. government source; Register fixture: Fictional; CC0"
+    },
+    {
+      "kind": "flow",
+      "id": "fig-07",
+      "basis": "Technical schematic",
+      "title": "Design the next validation",
+      "subtitle": "Trace affected decisions   /   Measure label agreement   /   Test semantic changes",
+      "source": "Source: README.md · conceptual relations, no measured values",
+      "nodes": [
+        [
+          0.16,
+          0.52,
+          "Versioned provenance"
+        ],
+        [
+          0.5,
+          0.52,
+          "Blind annotation"
+        ],
+        [
+          0.84,
+          0.52,
+          "Unseen regulation"
+        ]
+      ],
+      "edges": [
+        [
+          0,
+          1,
+          ""
+        ],
+        [
+          1,
+          2,
+          ""
+        ]
+      ],
+      "alt": "Design the next validation. Versioned provenance: Trace affected decisions; Blind annotation: Measure label agreement; Unseen regulation: Test semantic changes"
+    }
+  ]
+}
