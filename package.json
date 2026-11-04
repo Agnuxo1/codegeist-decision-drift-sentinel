@@ -1,0 +1,16 @@
+{
+  "name": "decision-drift-sentinel",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Forge app for Jira and Confluence: when a policy or regulation page changes, find the decisions that relied on it and flag only the ones whose facts changed.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Francisco Angulo de Lafuente (https://github.com/Agnuxo1)",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node --test \"test/*.test.js\"",
+    "bench": "node bench/run_benchmark.js"
+  }
+}

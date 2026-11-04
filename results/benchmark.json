@@ -1,0 +1,527 @@
+{
+ "benchmark": "2 CFR 200 rewrite of 2024-10-01, 48 assessments, 19 material",
+ "fixture_sha256": "d24aa9e8f9d5fe220729648fbd90324debac0d5104c4f7bbca270514bf405a3a",
+ "source_commit": "79e9b5b6e843b776d734c98ef9e3800731ce3ecf",
+ "bootstrap": {
+  "unit": "section",
+  "resamples": 2000,
+  "seeds": [
+   20261030,
+   20261031,
+   20261101
+  ]
+ },
+ "methods": {
+  "control_all_amended": {
+   "role": "control",
+   "note": "Re-review every assessment whose section the eCFR marks as amended (all 48 sections were amended).",
+   "tp": 19,
+   "fp": 29,
+   "fn": 0,
+   "precision": 0.3958,
+   "recall": 1,
+   "f1": 0.5672,
+   "flagged": 48,
+   "review_load_saved": 0,
+   "f1_ci95_by_seed": [
+    [
+     0.4533,
+     0.7018
+    ],
+    [
+     0.4507,
+     0.7018
+    ],
+    [
+     0.4533,
+     0.7037
+    ]
+   ],
+   "delta_f1_vs_text_changed_ci95_by_seed": [
+    [
+     -0.0581,
+     0
+    ],
+    [
+     -0.0563,
+     0
+    ],
+    [
+     -0.0572,
+     0
+    ]
+   ]
+  },
+  "control_text_changed": {
+   "role": "control",
+   "note": "Re-review whenever the quoted text is no longer present verbatim.",
+   "tp": 19,
+   "fp": 26,
+   "fn": 0,
+   "precision": 0.4222,
+   "recall": 1,
+   "f1": 0.5938,
+   "flagged": 45,
+   "review_load_saved": 0.0625,
+   "f1_ci95_by_seed": [
+    [
+     0.4762,
+     0.7164
+    ],
+    [
+     0.4762,
+     0.717
+    ],
+    [
+     0.48,
+     0.7188
+    ]
+   ],
+   "delta_f1_vs_text_changed_ci95_by_seed": [
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     0
+    ]
+   ]
+  },
+  "sentinel_v1": {
+   "role": "pre-registered",
+   "note": "Published rule: successor by distance <= 0.60, v1 facts.",
+   "tp": 16,
+   "fp": 9,
+   "fn": 3,
+   "precision": 0.64,
+   "recall": 0.8421,
+   "f1": 0.7273,
+   "flagged": 25,
+   "review_load_saved": 0.4792,
+   "f1_ci95_by_seed": [
+    [
+     0.5778,
+     0.878
+    ],
+    [
+     0.5854,
+     0.8824
+    ],
+    [
+     0.5882,
+     0.8649
+    ]
+   ],
+   "delta_f1_vs_text_changed_ci95_by_seed": [
+    [
+     0.0038,
+     0.2847
+    ],
+    [
+     -0.0032,
+     0.275
+    ],
+    [
+     0.0034,
+     0.2742
+    ]
+   ]
+  },
+  "sentinel_modal_v2": {
+   "role": "exploratory",
+   "note": "v1 plus modals will/can; chosen after error analysis on these same 48 cases.",
+   "tp": 17,
+   "fp": 9,
+   "fn": 2,
+   "precision": 0.6538,
+   "recall": 0.8947,
+   "f1": 0.7556,
+   "flagged": 26,
+   "review_load_saved": 0.4583,
+   "f1_ci95_by_seed": [
+    [
+     0.6154,
+     0.902
+    ],
+    [
+     0.6154,
+     0.9048
+    ],
+    [
+     0.625,
+     0.898
+    ]
+   ],
+   "delta_f1_vs_text_changed_ci95_by_seed": [
+    [
+     0.0417,
+     0.3074
+    ],
+    [
+     0.0443,
+     0.3
+    ],
+    [
+     0.0452,
+     0.2952
+    ]
+   ]
+  },
+  "ablation_numbers_only": {
+   "role": "ablation",
+   "tp": 12,
+   "fp": 3,
+   "fn": 7,
+   "precision": 0.8,
+   "recall": 0.6316,
+   "f1": 0.7059,
+   "flagged": 15,
+   "review_load_saved": 0.6875,
+   "f1_ci95_by_seed": [
+    [
+     0.5,
+     0.8511
+    ],
+    [
+     0.5,
+     0.8571
+    ],
+    [
+     0.5143,
+     0.8485
+    ]
+   ],
+   "delta_f1_vs_text_changed_ci95_by_seed": [
+    [
+     -0.0781,
+     0.2685
+    ],
+    [
+     -0.0724,
+     0.2581
+    ],
+    [
+     -0.0747,
+     0.2701
+    ]
+   ]
+  },
+  "ablation_words_only": {
+   "role": "ablation",
+   "tp": 10,
+   "fp": 8,
+   "fn": 9,
+   "precision": 0.5556,
+   "recall": 0.5263,
+   "f1": 0.5405,
+   "flagged": 18,
+   "review_load_saved": 0.625,
+   "f1_ci95_by_seed": [
+    [
+     0.3529,
+     0.75
+    ],
+    [
+     0.3556,
+     0.7429
+    ],
+    [
+     0.3556,
+     0.7333
+    ]
+   ],
+   "delta_f1_vs_text_changed_ci95_by_seed": [
+    [
+     -0.2475,
+     0.1545
+    ],
+    [
+     -0.2415,
+     0.1466
+    ],
+    [
+     -0.2432,
+     0.1425
+    ]
+   ]
+  },
+  "ablation_authority_roles": {
+   "role": "ablation",
+   "tp": 17,
+   "fp": 11,
+   "fn": 2,
+   "precision": 0.6071,
+   "recall": 0.8947,
+   "f1": 0.7234,
+   "flagged": 28,
+   "review_load_saved": 0.4167,
+   "f1_ci95_by_seed": [
+    [
+     0.5862,
+     0.85
+    ],
+    [
+     0.5846,
+     0.8511
+    ],
+    [
+     0.5946,
+     0.8571
+    ]
+   ],
+   "delta_f1_vs_text_changed_ci95_by_seed": [
+    [
+     0.02,
+     0.25
+    ],
+    [
+     0.0169,
+     0.2418
+    ],
+    [
+     0.0208,
+     0.2454
+    ]
+   ]
+  },
+  "ablation_distance_03": {
+   "role": "ablation",
+   "tp": 17,
+   "fp": 15,
+   "fn": 2,
+   "precision": 0.5313,
+   "recall": 0.8947,
+   "f1": 0.6667,
+   "flagged": 32,
+   "review_load_saved": 0.3333,
+   "f1_ci95_by_seed": [
+    [
+     0.5366,
+     0.8
+    ],
+    [
+     0.5357,
+     0.8
+    ],
+    [
+     0.5455,
+     0.8
+    ]
+   ],
+   "delta_f1_vs_text_changed_ci95_by_seed": [
+    [
+     -0.0086,
+     0.1579
+    ],
+    [
+     -0.0067,
+     0.1567
+    ],
+    [
+     -0.0058,
+     0.1566
+    ]
+   ]
+  },
+  "ablation_distance_045": {
+   "role": "ablation",
+   "tp": 17,
+   "fp": 10,
+   "fn": 2,
+   "precision": 0.6296,
+   "recall": 0.8947,
+   "f1": 0.7391,
+   "flagged": 27,
+   "review_load_saved": 0.4375,
+   "f1_ci95_by_seed": [
+    [
+     0.6,
+     0.8846
+    ],
+    [
+     0.5965,
+     0.8837
+    ],
+    [
+     0.6087,
+     0.878
+    ]
+   ],
+   "delta_f1_vs_text_changed_ci95_by_seed": [
+    [
+     0.0303,
+     0.2816
+    ],
+    [
+     0.0325,
+     0.2742
+    ],
+    [
+     0.0309,
+     0.269
+    ]
+   ]
+  },
+  "ablation_distance_05": {
+   "role": "ablation",
+   "tp": 17,
+   "fp": 10,
+   "fn": 2,
+   "precision": 0.6296,
+   "recall": 0.8947,
+   "f1": 0.7391,
+   "flagged": 27,
+   "review_load_saved": 0.4375,
+   "f1_ci95_by_seed": [
+    [
+     0.6,
+     0.8846
+    ],
+    [
+     0.5965,
+     0.8837
+    ],
+    [
+     0.6087,
+     0.878
+    ]
+   ],
+   "delta_f1_vs_text_changed_ci95_by_seed": [
+    [
+     0.0303,
+     0.2816
+    ],
+    [
+     0.0325,
+     0.2742
+    ],
+    [
+     0.0309,
+     0.269
+    ]
+   ]
+  },
+  "ablation_distance_06": {
+   "role": "ablation",
+   "tp": 17,
+   "fp": 9,
+   "fn": 2,
+   "precision": 0.6538,
+   "recall": 0.8947,
+   "f1": 0.7556,
+   "flagged": 26,
+   "review_load_saved": 0.4583,
+   "f1_ci95_by_seed": [
+    [
+     0.6154,
+     0.902
+    ],
+    [
+     0.6154,
+     0.9048
+    ],
+    [
+     0.625,
+     0.898
+    ]
+   ],
+   "delta_f1_vs_text_changed_ci95_by_seed": [
+    [
+     0.0417,
+     0.3074
+    ],
+    [
+     0.0443,
+     0.3
+    ],
+    [
+     0.0452,
+     0.2952
+    ]
+   ]
+  },
+  "ablation_distance_07": {
+   "role": "ablation",
+   "tp": 16,
+   "fp": 9,
+   "fn": 3,
+   "precision": 0.64,
+   "recall": 0.8421,
+   "f1": 0.7273,
+   "flagged": 25,
+   "review_load_saved": 0.4792,
+   "f1_ci95_by_seed": [
+    [
+     0.5789,
+     0.878
+    ],
+    [
+     0.5778,
+     0.8718
+    ],
+    [
+     0.5882,
+     0.878
+    ]
+   ],
+   "delta_f1_vs_text_changed_ci95_by_seed": [
+    [
+     0.0114,
+     0.2777
+    ],
+    [
+     0.0115,
+     0.2723
+    ],
+    [
+     0.0141,
+     0.2708
+    ]
+   ]
+  },
+  "ablation_distance_08": {
+   "role": "ablation",
+   "tp": 16,
+   "fp": 9,
+   "fn": 3,
+   "precision": 0.64,
+   "recall": 0.8421,
+   "f1": 0.7273,
+   "flagged": 25,
+   "review_load_saved": 0.4792,
+   "f1_ci95_by_seed": [
+    [
+     0.5789,
+     0.878
+    ],
+    [
+     0.5778,
+     0.8718
+    ],
+    [
+     0.5882,
+     0.878
+    ]
+   ],
+   "delta_f1_vs_text_changed_ci95_by_seed": [
+    [
+     0.0114,
+     0.2777
+    ],
+    [
+     0.0115,
+     0.2723
+    ],
+    [
+     0.0141,
+     0.2708
+    ]
+   ]
+  }
+ }
+}

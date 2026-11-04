@@ -1,0 +1,130 @@
+{
+  "title": "Decision Drift Sentinel",
+  "sub": "From changed policy text to an auditable review queue",
+  "issue": "Codegeist 2026 · private research core",
+  "sections": [
+    [
+      "Research question",
+      "Which decisions should be reviewed again?",
+      [
+        "Original policy",
+        "Quoted evidence",
+        "Updated policy",
+        "Review queue"
+      ],
+      [
+        "Version the text",
+        "Tie it to a decision",
+        "Detect material edits",
+        "Keep the reason"
+      ]
+    ],
+    [
+      "Method",
+      "Classify edits with deterministic rules",
+      [
+        "Exact text match",
+        "Find successor",
+        "Compare facts",
+        "Emit verdict"
+      ],
+      [
+        "Preserve if identical",
+        "Normalised edit distance",
+        "Numbers and obligations",
+        "Attach both passages"
+      ]
+    ],
+    [
+      "Benchmark",
+      "F1 on the 48-case benchmark",
+      [
+        "All amended",
+        "Changed text",
+        "Sentinel v1",
+        "Modal v2"
+      ],
+      [
+        "0.567 F1",
+        "0.594 F1",
+        "0.727 F1",
+        "0.756 exploratory"
+      ]
+    ],
+    [
+      "Reproduce",
+      "Run the test and benchmark independently",
+      [
+        "Node.js 22+",
+        "Test contracts",
+        "Replay cases",
+        "Read intervals"
+      ],
+      [
+        "No packages required",
+        "Python parity fixture",
+        "Run locally",
+        "Cluster bootstrap"
+      ]
+    ],
+    [
+      "Limitations and Forge status",
+      "Separate local evidence and deployment",
+      [
+        "One regulation",
+        "One annotator",
+        "Forge integration"
+      ],
+      [
+        "Single corpus",
+        "Limited independent labels",
+        "Not implemented here"
+      ]
+    ],
+    [
+      "License and citation",
+      "Preserve the attribution chain",
+      [
+        "Original code",
+        "Regulation text",
+        "Register fixture"
+      ],
+      [
+        "MIT notice applies",
+        "U.S. government source",
+        "Fictional; CC0"
+      ]
+    ],
+    [
+      "Bibliography and research directions",
+      "Design the next validation",
+      [
+        "Versioned provenance",
+        "Blind annotation",
+        "Unseen regulation"
+      ],
+      [
+        "Trace affected decisions",
+        "Measure label agreement",
+        "Test semantic changes"
+      ]
+    ]
+  ],
+  "chart": {
+    "heading": "Benchmark",
+    "labels": [
+      "Review all amended",
+      "Review changed text",
+      "Sentinel v1",
+      "Modal v2 (exploratory)"
+    ],
+    "values": [
+      0.567,
+      0.594,
+      0.727,
+      0.756
+    ]
+  },
+  "header_source": "docs/science-figures/cover-art.jpg",
+  "repository": "codegeist-decision-drift-sentinel"
+}
