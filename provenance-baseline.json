@@ -1,0 +1,108 @@
+{
+  "schema": "fran-provenance-baseline-v1",
+  "project": "Decision Drift Sentinel",
+  "author": {
+    "name": "Francisco Angulo de Lafuente",
+    "orcid": "https://orcid.org/0009-0001-1634-7063"
+  },
+  "canonical_url": "https://github.com/Agnuxo1/codegeist-decision-drift-sentinel",
+  "baseline_commit": "99614359f1762dde1b257a0143469909f4852a08",
+  "recorded_on": "2026-11-06",
+  "method": {
+    "file_hash": "SHA-256 of raw Git blob bytes at baseline_commit",
+    "passage_hash": "SHA-256 of UTF-8 normalized passage as specified per record",
+    "excluded": [
+      "generated figures and renders",
+      "benchmark fixture and eCFR text",
+      "license boilerplate",
+      "vendored or third-party material"
+    ],
+    "interpretation": "A hash or textual match is a lead for manual review; it does not establish authorship, copying, acquisition, or a license violation."
+  },
+  "selected_files": [
+    {
+      "path": "README.md",
+      "sha256": "070086858a6faed5422084dac849a60676cbe0ac88b6b7e47b6a5e2add01f979",
+      "scope_note": "original project documentation with cited sources"
+    },
+    {
+      "path": "src/core/drift.js",
+      "sha256": "ac508a8d1ca5865b0c1c6efd77d1bda768ce32c401d278942de1304ce0d0b048",
+      "scope_note": "original JavaScript research core; port lineage is documented"
+    },
+    {
+      "path": "test/drift.test.js",
+      "sha256": "9cd898fef38d7d7f552e62eabf9a9e36079be7a5c995d84e25c93cafab91b63f",
+      "scope_note": "original contract and parity tests"
+    },
+    {
+      "path": "bench/export_reference.py",
+      "sha256": "c049b78246bf7ae8490b93e7da798e4192d7c475e08d3da41d30307d3b0ff4ab",
+      "scope_note": "original reproducibility exporter; consumes the separately licensed upstream project"
+    },
+    {
+      "path": "bench/run_benchmark.js",
+      "sha256": "f55b466042ab1aba31a735e5e2637def9c38f88e9c135e182745db08cbbe7f01",
+      "scope_note": "original benchmark and bootstrap implementation"
+    },
+    {
+      "path": "experiments/LOG.md",
+      "sha256": "0a2c58e4d26ff65e3ec8b6052feb9658d4cbcdb0b3cbe5c8b9f68be566934105",
+      "scope_note": "original experiment record and interpretation"
+    },
+    {
+      "path": "tools/render_lab_figures.py",
+      "sha256": "eb80ab1f1ee1308ca05d5838f3a695b72df81bdc5a2eda42151c3aa9a1487bef",
+      "scope_note": "original figure renderer; generated assets are excluded"
+    },
+    {
+      "path": "docs/figures/README.md",
+      "sha256": "7e792a61529a9060dbc0aa6bb34eb28e1fe8ec2ff57588fc00685f839ceba3a7",
+      "scope_note": "original figure methods and provenance documentation"
+    }
+  ],
+  "distinctive_passages": [
+    {
+      "path": "README.md",
+      "label": "The method summary",
+      "text": "Check whether the original quote remains verbatim. Otherwise, locate a candidate successor with normalised Levenshtein distance and compare explicit facts: amounts, percentages, durations, and obligation or permission cues.",
+      "normalization": "Unicode NFC; CRLF/CR to LF; collapse all whitespace runs; trim",
+      "normalized_sha256": "7ff3f5c0afc6624a3c8ab68616f8cb08c389bca004b75e578e38b5e06a2bdb83"
+    },
+    {
+      "path": "src/core/drift.js",
+      "label": "Material-change decision",
+      "text": "else if (factsRemoved.length || factsAdded.length) verdict = 'REVIEW_MATERIAL';",
+      "normalization": "Unicode NFC; CRLF/CR to LF; collapse all whitespace runs; trim",
+      "normalized_sha256": "fcfb85903071e0aef726910296d38f580d4911e4a973f5346c478d8bc9f6b943"
+    },
+    {
+      "path": "test/drift.test.js",
+      "label": "Python parity contract",
+      "text": "test(`parity with the Python reference on 48 real 2 CFR 200 cases: ${variant}`, () => {",
+      "normalization": "Unicode NFC; CRLF/CR to LF; collapse all whitespace runs; trim",
+      "normalized_sha256": "36a2e63530bbca4dd93903c14934d09d021c0cef2ff5c24664d2f718466344cb"
+    },
+    {
+      "path": "bench/run_benchmark.js",
+      "label": "Deterministic bootstrap seeds",
+      "text": "const SEEDS = [20261030, 20261031, 20261101];",
+      "normalization": "Unicode NFC; CRLF/CR to LF; collapse all whitespace runs; trim",
+      "normalized_sha256": "1bb5c98086d95437d00dd0419250055a89db1d15806f037e8b3fc6881d846875"
+    },
+    {
+      "path": "experiments/LOG.md",
+      "label": "Pre-registered versus exploratory finding",
+      "text": "Modal v2 (`will`/`can`) | F1 0.756, R 0.895, 26 reviews; chosen after error analysis on these same 48 cases | app default, reported as exploratory; the pre-registered figure is v1",
+      "normalization": "Unicode NFC; CRLF/CR to LF; collapse all whitespace runs; trim",
+      "normalized_sha256": "e261ce0cb7ce67d762a974b392e838a1478ce066ed971f4536235a1c964f3246"
+    },
+    {
+      "path": "docs/figures/README.md",
+      "label": "Figure provenance statement",
+      "text": "Numerical claims, synthetic illustrations and technical schematics are labelled separately.",
+      "normalization": "Unicode NFC; CRLF/CR to LF; collapse all whitespace runs; trim",
+      "normalized_sha256": "db943aaf3fda3389d7bd95f67457b34e0e2e087d4b88f4cceb202a77044165ab"
+    }
+  ]
+}

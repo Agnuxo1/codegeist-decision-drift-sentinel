@@ -1,11 +1,12 @@
 {
-  "project": "codegeist-decision-drift-sentinel",
-  "date": "2026-11-04",
+  "project": "Decision Drift Sentinel",
   "creator": {
     "name": "Francisco Angulo de Lafuente",
     "orcid": "https://orcid.org/0009-0001-1634-7063"
   },
-  "figureRendererLicense": "MIT",
-  "projectLicense": "MIT",
-  "licenseFile": "LICENSE"
+  "original_work_date": "2026-11-04",
+  "attribution_recorded_on": "2026-11-06",
+  "figure_renderer_license": "MIT",
+  "generated_asset_license": "unresolved; no license is asserted by the renderer license",
+  "scope_document": "../../LICENSE_SCOPE.md"
 }

@@ -1,6 +1,12 @@
 {
   "title": "Decision Drift Sentinel",
   "subtitle": "From changed policy text to an auditable review queue",
+  "attribution": {
+    "author": "Francisco Angulo de Lafuente",
+    "orcid": "https://orcid.org/0009-0001-1634-7063",
+    "recorded_on": "2026-11-06",
+    "license_scope": "../../LICENSE_SCOPE.md"
+  },
   "figures": [
     {
       "kind": "flow",

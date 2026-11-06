@@ -1,5 +1,7 @@
 # Experiment log
 
+Research author: Francisco Angulo de Lafuente · [ORCID](https://orcid.org/0009-0001-1634-7063) · Attribution record: 2026-11-06.
+
 Each change: hypothesis → experiment → control → metric → decision. Negative results are kept.
 Data: the public 48-assessment benchmark on the 1 October 2024 rewrite of 2 CFR 200 (official eCFR text, U.S. public
 domain; fictional register, CC0; labels by one annotator blind to the method), exported from
@@ -17,5 +19,7 @@ domain; fictional register, CC0; labels by one annotator blind to the method), e
 Limits: 48 cases and one annotator; this does not show performance on unseen regulations. Next: an external set
 (another eCFR rewrite or Confluence policy pages) labelled by a person, and an LLM-judge control if a free, permitted
 model is available inside the rules.
+
+**Audit reproduction note (2026-11-06).** `npm run bench` reproduced the recorded metrics, but on this LF checkout it generated fixture hash `6ed685c4ba70250d460556e00c789207d8028aec9d727d9de19a637086f427c2` instead of the committed `d24aa9e8f9d5fe220729648fbd90324debac0d5104c4f7bbca270514bf405a3a`. Converting only the fixture's LF line endings to CRLF reproduces the committed hash; the numeric outputs matched. The script hashes raw fixture bytes, so this metadata hash varies with checkout line endings. The committed result artifact was preserved.
 
 Original research: [Francisco Angulo de Lafuente](https://orcid.org/0009-0001-1634-7063). Documentation edition: 2026-11-04. Preserve the MIT notice for original software and cite this project.

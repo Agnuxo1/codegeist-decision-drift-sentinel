@@ -3,6 +3,7 @@
 # Research-Project: Decision Drift Sentinel
 # Research-Date: 2026-11-04
 # Research-ORCID: https://orcid.org/0009-0001-1634-7063
+# Attribution-Recorded-On: 2026-11-06
 # Reuse: Preserve the MIT notice and cite the project author.
 
 """Export the 2 CFR 200 benchmark and the Python reference verdicts as one JSON fixture.

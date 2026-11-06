@@ -1,7 +1,13 @@
 {
   "title": "Decision Drift Sentinel",
   "sub": "From changed policy text to an auditable review queue",
-  "issue": "Codegeist 2026 · private research core",
+  "issue": "Codegeist 2026 · public research core; no submission claimed",
+  "attribution": {
+    "author": "Francisco Angulo de Lafuente",
+    "orcid": "https://orcid.org/0009-0001-1634-7063",
+    "recorded_on": "2026-11-06",
+    "license_scope": "../../LICENSE_SCOPE.md"
+  },
   "sections": [
     [
       "Research question",

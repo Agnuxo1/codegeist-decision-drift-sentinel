@@ -1,9 +1,8 @@
 # Decision Drift Sentinel
 
+**Original software author:** © 2026 Francisco Angulo de Lafuente · [ORCID](https://orcid.org/0009-0001-1634-7063) · Attribution record: 2026-11-06 · [CITATION.cff](CITATION.cff) · [Software metadata](codemeta.json).
+
 ![Decision Drift Sentinel research cover.](docs/figures/cover.gif)
-
-
-**Project citation:** [Francisco Angulo de Lafuente](https://orcid.org/0009-0001-1634-7063) · [CITATION.cff](CITATION.cff) · [Software metadata](codemeta.json).
 
 
 ## Research question
@@ -87,6 +86,8 @@ The following primary sources inform proposed checks. Their text, code, figures,
 - [W3C (2013), PROV-O: The PROV Ontology](https://www.w3.org/TR/prov-o/). Link each decision to source entities and revision activities.
 - [Parikh et al. (2016), A Decomposable Attention Model for Natural Language Inference](https://arxiv.org/abs/1606.01933). Evaluate an entailment comparator for wording-only shifts as a separate prospective baseline.
 
-**Attribution and reuse.** Please credit [Francisco Angulo de Lafuente](https://orcid.org/0009-0001-1634-7063) in academic and software reuse and do not present this work as your own. Original MIT-licensed code is covered by the repository licence. When distributing copies or substantial portions of MIT software, preserve the copyright and permission notice. Upstream material keeps its own terms. [License](LICENSE) · [Figure methods and provenance](docs/figures/README.md).
+**Attribution and reuse.** This project contains open-source material under the MIT License. When redistributing copies or substantial portions, retain the copyright and permission notices. If you build on this work, please cite the project and credit Francisco Angulo de Lafuente (ORCID: 0009-0001-1634-7063). Help advance scientific knowledge: we welcome reproducible results, corrections, and contributions.
 
-<!-- research-provenance: project=codegeist-decision-drift-sentinel; date=2026-11-04; author=Francisco Angulo de Lafuente; orcid=https://orcid.org/0009-0001-1634-7063; new-renderer-license=MIT -->
+MIT applies only to the original software and documentation listed in [LICENSE_SCOPE.md](LICENSE_SCOPE.md). Upstream, regulatory, benchmark, and figure materials retain their separately documented terms. See [license](LICENSE), [figure methods and provenance](docs/figures/README.md), and the [research provenance record](provenance.json).
+
+<!-- research-provenance: project=Decision Drift Sentinel; recorded_on=2026-11-06; author=Francisco Angulo de Lafuente; orcid=https://orcid.org/0009-0001-1634-7063; license_scope=LICENSE_SCOPE.md -->

@@ -1,10 +1,10 @@
 # Scientific figures: Decision Drift Sentinel
 
-Documentation edition: 2026-11-04. Project author: [Francisco Angulo de Lafuente](https://orcid.org/0009-0001-1634-7063).
+Documentation edition: 2026-11-04. Attribution record: 2026-11-06. Project author: [Francisco Angulo de Lafuente](https://orcid.org/0009-0001-1634-7063).
 
 New AI-generated editorial illustration; rasterised here for the banner. It depicts no observations. The animated method figures were drawn from the repository's published descriptions and are explanatory. A panel explicitly marked as reported evidence uses values transcribed in the README.
 
-The GIF comment field contains factual machine-readable project, author, date, and ORCID metadata. The renderer is distributed under the MIT license at [LICENSE](../../LICENSE). Please preserve the notices and cite the original author.
+The GIF comment field contains factual machine-readable project, author, original-work date, and ORCID metadata. The renderer source is MIT-licensed at [LICENSE](../../LICENSE); generated images are not separately licensed by that grant, and the AI-generated header artwork's reuse rights remain unresolved. Please preserve the software notices and cite the original author. See [license scope](../../LICENSE_SCOPE.md).
 
 Regenerate with Python 3.10+ and Pillow 10.4+:
 ~~~sh

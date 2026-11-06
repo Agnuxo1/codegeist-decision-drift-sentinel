@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "project": "Decision Drift Sentinel",
+  "author": {
+    "name": "Francisco Angulo de Lafuente",
+    "orcid": "https://orcid.org/0009-0001-1634-7063"
+  },
+  "recorded_on": "2026-11-06",
+  "canonical_url": "https://github.com/Agnuxo1/codegeist-decision-drift-sentinel",
+  "repository_id": 1445332108,
+  "pre_attribution_commit": "99614359f1762dde1b257a0143469909f4852a08",
+  "publication": {
+    "visibility": "public",
+    "default_branch": "main",
+    "verified_anonymously": true,
+    "visibility_changed_in_this_record": false
+  },
+  "license_scope": {
+    "spdx": "MIT",
+    "license_file": "LICENSE",
+    "scope_document": "LICENSE_SCOPE.md",
+    "summary": "MIT applies to the original software and author-created documentation identified in LICENSE_SCOPE.md; mixed benchmark data, generated images, and unresolved assets are excluded."
+  },
+  "upstream_lineage": [
+    {
+      "canonical_url": "https://github.com/Agnuxo1/zetaris-regulation-change-sentinel",
+      "commit": "79e9b5b6e843b776d734c98ef9e3800731ce3ecf",
+      "license": "MIT",
+      "scope": "Reference implementation and data-source notes used by the JavaScript port and benchmark exporter; same verified author/account."
+    }
+  ],
+  "data_and_assets": [
+    {
+      "path": "bench/fixtures/cfr200_benchmark.json",
+      "scope": "Mixed fixture: eCFR regulatory text, a fictional register identified as CC0 1.0, and benchmark labels; not covered wholesale by the repository MIT grant."
+    },
+    {
+      "path": "results/benchmark.json",
+      "scope": "Generated benchmark evidence; no separate data license asserted."
+    },
+    {
+      "path": "docs/figures/ and docs/science-figures/ generated images",
+      "scope": "Separate from renderer source. Asset reuse rights are unresolved and are not asserted under MIT."
+    }
+  ],
+  "official_sources": [
+    {
+      "url": "https://www.ecfr.gov/api/versioner/v1/full/2024-10-01/title-2.xml?part=200",
+      "consulted_on": "2026-11-06",
+      "scope": "Official eCFR API endpoint for the 2024-10-01 Title 2, Part 200 text referenced by the benchmark fixture; endpoint returned HTTP 200."
+    },
+    {
+      "url": "https://www.govinfo.gov/content/pkg/USCODE-2022-title17/html/USCODE-2022-title17-chap1-sec105.htm",
+      "consulted_on": "2026-11-06",
+      "scope": "17 U.S.C. § 105 on U.S. Government works; this general rule does not establish rights in any third-party material that may appear in a government publication."
+    }
+  ],
+  "contest_rules_considered": [
+    {
+      "edition": "Codegeist 2026",
+      "official_source": "https://codegeist2026.devpost.com/rules",
+      "consulted_on": "2026-11-06",
+      "scope": "Project requirements, original-work and sole-ownership terms, compliant open-source and third-party SDK/API/data use, submission materials, language, publicity, and the 2026 submission period."
+    }
+  ],
+  "contest_rules_findings": {
+    "project_requirement": "A submission must be an Atlassian Forge app integrated with at least one Atlassian product or platform capability.",
+    "ownership_and_code": "The submission must be original work and solely owned by the entrant; compliant open-source software is allowed when the entrant builds on it and follows its license.",
+    "third_party_material": "Entrants must be authorized to use third-party SDKs, APIs, and data under their applicable terms.",
+    "submitted_materials": "The rules require judge access and instructions, an English description, and a public demo video under five minutes; some materials may be publicly displayed and the sponsor receives promotional rights described by the rules.",
+    "anonymity_or_embargo": "No anonymous-review or embargo requirement was found in the official rules as consulted; this does not address separate event communications.",
+    "repository_alignment": "README states this release has no Forge integration and is not a hackathon submission. No eligibility or entry is claimed.",
+    "models": "No model asset was identified; README describes a deterministic core with no model or network service."
+  },
+  "contest_status": "No Codegeist submission is claimed. The README states that Forge integration and submission are outside this research-core release; eligibility of a future submission is not established by this repository record.",
+  "baseline": {
+    "repository_path": "provenance-baseline.json",
+    "external_copy": "D:/PROJECTS/.cognition/github-attribution-2026-11-04/repo8-baseline-20261106.json",
+    "baseline_commit": "99614359f1762dde1b257a0143469909f4852a08",
+    "manifest_sha256": "ca211167c42d06a7e6f348206bacca628adfe4de73745438bafc5e481b77b8f3",
+    "selected_file_count": 8,
+    "distinctive_passage_count": 6
+  }
+}

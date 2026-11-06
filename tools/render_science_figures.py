@@ -6,6 +6,12 @@ Research-Project: codegeist-decision-drift-sentinel
 Research-Date: 2026-11-04
 Research-ORCID: https://orcid.org/0009-0001-1634-7063
 """
+# SPDX-FileCopyrightText: 2026 Francisco Angulo de Lafuente
+# SPDX-License-Identifier: MIT
+# Research-Project: Decision Drift Sentinel
+# Research-ORCID: https://orcid.org/0009-0001-1634-7063
+# Attribution-Recorded-On: 2026-11-06
+# Reuse: Preserve the MIT notice and cite the project author.
 import argparse
 from pathlib import Path
 import json
