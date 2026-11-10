@@ -1,0 +1,40 @@
+# Unregistered local candidate. Replace this placeholder ONLY after authorized Forge registration.
+app:
+  id: ari:cloud:ecosystem::app/00000000-0000-0000-0000-000000000000
+  runtime:
+    name: nodejs24.x
+  compatibility:
+    confluence:
+      required: true
+modules:
+  macro:
+    - key: decision-drift-source
+      resource: source-card
+      render: native
+      resolver:
+        function: resolver
+      title: Decision Drift Source
+      description: Show the versioned policy source to link from a Jira decision.
+  jira:issuePanel:
+    - key: decision-drift-panel
+      resource: issue-panel
+      render: native
+      resolver:
+        function: resolver
+      title: Decision Drift Sentinel
+      icon: resource:icon;sentinel.svg
+  function:
+    - key: resolver
+      handler: index.handler
+resources:
+  - key: issue-panel
+    path: src/frontend/issue.tsx
+  - key: source-card
+    path: src/frontend/source.tsx
+  - key: icon
+    path: static
+permissions:
+  scopes:
+    - read:jira-work
+    - read:page:confluence
+    - storage:app

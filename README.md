@@ -91,3 +91,16 @@ The following primary sources inform proposed checks. Their text, code, figures,
 MIT applies only to the original software and documentation listed in [LICENSE_SCOPE.md](LICENSE_SCOPE.md). Upstream, regulatory, benchmark, and figure materials retain their separately documented terms. See [license](LICENSE), [figure methods and provenance](docs/figures/README.md), and the [research provenance record](provenance.json).
 
 <!-- research-provenance: project=Decision Drift Sentinel; recorded_on=2026-11-06; author=Francisco Angulo de Lafuente; orcid=https://orcid.org/0009-0001-1634-7063; license_scope=LICENSE_SCOPE.md -->
+
+
+## Forge integration candidate — 10 November 2026
+
+The Forge status above describes the original research release. A new
+[local integration candidate](forge/README.md) adds a Jira issue panel and
+Confluence source card while preserving the original core and figures.
+Twenty local workflow/protocol checks, TypeScript and actual SDK bundling
+pass; the dated patched dependency audit reports zero advisories.
+The app is unregistered and has not passed Forge lint or real cloud
+qualification. No Codegeist submission or new F1 improvement is claimed.
+The [local-only workflow](.github/workflows/forge-local.yml) requires no
+Atlassian credentials and cannot deploy or submit an app.

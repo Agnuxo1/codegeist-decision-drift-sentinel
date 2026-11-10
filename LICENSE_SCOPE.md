@@ -16,3 +16,12 @@ The JavaScript core documents its lineage to the author's own [Regulation Change
 - Bibliographic works linked from the documentation retain their own terms. No third-party source code is vendored in the repository tree; the identified software lineage is the author's separate MIT-licensed repository above.
 
 This scope note does not change the rights in source material or grant rights the author does not hold. Where this file does not state a license, no new license is asserted.
+
+
+## Added Forge candidate — 10 November 2026
+
+The author's new software, fictional workflow tests, icon, configuration and
+documentation under `forge/`, and `.github/workflows/forge-local.yml`, are
+MIT-licensed as stated in their directory license and SPDX notices. This
+addendum grants no additional rights in the earlier mixed benchmark, labels
+or generated figures. Existing notices and the earlier scope remain intact.

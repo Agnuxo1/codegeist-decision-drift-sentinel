@@ -1,0 +1,39 @@
+# Copyright (c) 2026 Francisco Angulo de Lafuente. SPDX-License-Identifier: MIT
+name: Forge local checks (no cloud)
+on:
+  push:
+    branches: [main, codex/forge-r01-20261110]
+    paths: [forge/**, .github/workflows/forge-local.yml]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  local-candidate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: 24.22.1
+          cache: npm
+          cache-dependency-path: forge/package-lock.json
+      - name: Original core regression checks
+        run: npm test
+      - name: Exact candidate dependencies
+        working-directory: forge
+        run: npm ci --engine-strict --no-fund
+      - name: Workflow and response contracts
+        working-directory: forge
+        run: npm test
+      - name: Typecheck native UI
+        working-directory: forge
+        run: npm run typecheck
+      - name: Bundle actual SDK entry points locally
+        working-directory: forge
+        run: npm run build:check
+      - name: Runtime dependency audit
+        working-directory: forge
+        run: npm audit --omit=dev --audit-level=moderate

@@ -1,0 +1,6 @@
+node_modules/
+.forge/
+.env*
+dist/
+coverage/
+manifest.local.yml

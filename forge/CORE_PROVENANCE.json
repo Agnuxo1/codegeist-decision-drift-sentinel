@@ -1,0 +1,8 @@
+{
+  "source_commit": "7e58a7615555a727b1ab71e21a3875602498919b",
+  "source_path": "src/core/drift.js",
+  "copy_path": "forge/src/core/drift.js",
+  "sha256": "4586c238b78e61ce661565f3a6d362e95de4084635084a3b289ca85db6db8a3d",
+  "copied_byte_exact": true,
+  "baseline_research_unchanged": true
+}

@@ -1,0 +1,29 @@
+{
+  "recorded_scope": "Local integration candidate, not cloud-qualified",
+  "original_source_commit": "7e58a7615555a727b1ab71e21a3875602498919b",
+  "original_core_tests": {
+    "passed": 9,
+    "failed": 0,
+    "unchanged": true
+  },
+  "local_workflow_and_protocol_tests": {
+    "passed": 20,
+    "failed": 0
+  },
+  "frontend_typecheck_passed": true,
+  "real_SDK_backend_and_two_frontends_bundled": true,
+  "full_npm_audit_snapshot_20261110": {
+    "total": 0,
+    "critical": 0,
+    "high": 0,
+    "moderate": 0
+  },
+  "lock_sha256": "75d013a473b2a244787f521f2565b0b5ae8a270ebf1a745d861d2aa7db50ba49",
+  "forge_lint_passed": false,
+  "forge_lint_blocker": "Existing Atlassian login required; not performed",
+  "cloud_qualification_completed": false,
+  "official_submission_created": false,
+  "new_model_F1_claim": false,
+  "retained_comparator": "modal_v2; historical exploratory selection, no new model score",
+  "conditional_create": "Official KVS2.1.2 FAIL_IF_EXISTS; local barrier regression passed; actual cloud race test remains required"
+}
