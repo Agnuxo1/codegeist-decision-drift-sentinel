@@ -5,6 +5,10 @@
 ![Decision Drift Sentinel research cover.](docs/figures/cover.gif)
 
 
+<!-- impact-note:start -->
+<sub><strong>Efficiency and practical value.</strong> Deterministic quote and fact checks direct attention to policy changes that may affect earlier decisions, without calling a model or network service. In the documented 48-case fixture, Sentinel v1 achieved higher F1 than reviewing every changed quote, providing a concrete basis for more selective review effort. The scope remains that local fixture. See the <a href="#benchmark">comparison and limits</a>.</sub>
+<!-- impact-note:end -->
+
 ## Research question
 
 ![Which decisions should be reviewed again?. Original policy: Version the text; Quoted evidence: Tie it to a decision; Updated policy: Detect material edits; Review queue: Keep the reason](docs/figures/fig-01.gif)
